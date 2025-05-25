@@ -1,8 +1,9 @@
-name: Email Step Test
+name: EmailStepTest
 
 on:
   push:
-    branches: [ main ]  # Or whichever branch you want
+    branches:
+      - main
 
 jobs:
   test:
@@ -10,6 +11,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      
+
       - name: 24f1002255@ds.study.iitm.ac.in
         run: echo "Hello, world!"
